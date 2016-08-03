@@ -1,6 +1,8 @@
 Test data for a Spider-Engine MariaDB cluster
 ---------------------------------------------
 
+This repository contains scripts and instructions for ingesting simple test data into a Spider cluster. More advanced test data extracted from the [CosmoSim](https://www.cosmosim.org/) database are availble in the [cosmosim](https://gitlab.aip.de/escience/spider-test-data/tree/master/cosmosim) directory of this repository.
+
 The following builds upon the [docker setup](https://gitlab.aip.de/escience/spider-docker) of the Spider-Engine. This implies that five different MariaDB instances are accessible on `localhost` on port `33060`-`33064` and that the following credentials are in `.my.cnf`:
 
 ```
