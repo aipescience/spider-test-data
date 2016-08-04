@@ -5,4 +5,4 @@ This repository contains scripts and instructions for ingesting test data into a
 
 * A simple ingest of random gaussian distributes data is available in the [gaussian](gaussian) directory.
 
-* More advanced test data extracted from the [CosmoSim](https://www.cosmosim.org/) database are availble in the [cosmosim](https://gitlab.aip.de/escience/spider-test-data/tree/master/cosmosim) directory of this repository.
+* More advanced test data extracted from the [CosmoSim](https://www.cosmosim.org/) database are availble in the [cosmosim](cosmosim) directory of this repository.
