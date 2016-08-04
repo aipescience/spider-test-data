@@ -8,11 +8,11 @@ Some example queries are added below.
 First create the database servers, if not already done:
 
 ```
-mysql -P 33061 < ../create-servers.sql
-mysql -P 33062 < ../create-servers.sql
-mysql -P 33063 < ../create-servers.sql
-mysql -P 33064 < ../create-servers.sql
-mysql -P 33060 < ../create-servers.sql
+mysql -P 33061 < create-servers.sql
+mysql -P 33062 < create-servers.sql
+mysql -P 33063 < create-servers.sql
+mysql -P 33064 < create-servers.sql
+mysql -P 33060 < create-servers.sql
 ```
 
 These will be reused in the connection-string when creating a spider table on the head node.
