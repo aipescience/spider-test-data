@@ -2,7 +2,7 @@
 import MySQLdb
 import numpy as np
 
-db = MySQLdb.connect(host="127.0.0.1", port=33060, user="root", passwd="0000", db="spider")
+db = MySQLdb.connect(host="spider00", user="root", db="spider")
 cur = db.cursor()
 
 n, mu, sigma = 10000, 0, 1.0

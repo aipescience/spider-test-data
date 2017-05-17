@@ -3,6 +3,7 @@ import MySQLdb
 import csv
 import argparse
 
+
 # Simple python script for ingesting data from csv-file
 
 def main():
@@ -18,20 +19,14 @@ def main():
     table = args.table
     csvfile = args.csvfile
 
-    # connection parameters
-    host = "127.0.0.1"
-    port = 33060
-    username = "root"
-    password = "0000"
-
     # connect with database
-    db = MySQLdb.connect(host="127.0.0.1", port=33060, user="root", passwd="0000", db="MDR1")
+    db = MySQLdb.connect(host="spider00", user="root", db=args.database)
     cur = db.cursor()
 
     # read csv-file with data
     fh = open(csvfile, 'r')
     csvreader = csv.reader(fh, delimiter=',', lineterminator='\n')
-    
+
     # find number of columns (from first line) for constructing ingest-string
     ncolumns = len(next(csvreader))
     fh.seek(0)  # go back
